@@ -39,8 +39,8 @@ const useStyle = makeStyles((theme) => ({
     right: 0,
     margin: "auto",
     [theme.breakpoints.down("xs")]: {
-      width: "100vw",
-      height: "100vh",
+      width: "80vw",
+      height: "90vh",
     },
   },
   form: {
@@ -92,7 +92,8 @@ function Feed() {
           <AddIcon />
         </Fab>
       </Tooltip>
-      <Modal open={openModal}>
+
+      <Modal open={openModal} onClose={closeModalHandler}>
         <Container className={classes.container}>
           <form className={classes.form} autoComplete="off">
             <div className={classes.item}>
