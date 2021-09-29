@@ -38,23 +38,24 @@ const useStyle = makeStyles((theme) => ({
 const avatarData = [
   {
     name: "Remy Sharp",
-    img: "https://material-ui.com/static/images/avatar/1.jpg",
+    img: "https://mui.com/static/images/avatar/1.jpg",
   },
   {
     name: "Travis Howard",
-    img: "https://material-ui.com/static/images/avatar/2.jpg",
+    img: "https://mui.com/static/images/avatar/2.jpg",
   },
   {
     name: "Cindy Baker",
-    img: "https://material-ui.com/static/images/avatar/3.jpg",
+    img: "https://mui.com/static/images/avatar/3.jpg",
   },
   {
-    name: "Agnes Walker",
-    img: "https://material-ui.com/static/images/avatar/4.jpg",
+    name: "Remy Sharp",
   },
   {
-    name: "Trevor Henderson",
-    img: "https://material-ui.com/static/images/avatar/5.jpg",
+    name: "Travis Howard",
+  },
+  {
+    name: "Cindy Baker",
   },
 ];
 
@@ -139,7 +140,7 @@ function Rightbar() {
         {linkData1.map((item, index) => (
           <Link
             key={index}
-            src="https://material-ui.com/"
+            to="https://mui.com/"
             variant="body2"
             className={classes.link}
           >
@@ -150,7 +151,7 @@ function Rightbar() {
         {linkData2.map((item, index) => (
           <Link
             key={index}
-            src="https://material-ui.com/"
+            to="https://mui.com/"
             variant="body2"
             className={classes.link}
           >

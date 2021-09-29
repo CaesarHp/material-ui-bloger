@@ -29,7 +29,7 @@ const useStyle = makeStyles((theme) => ({
   },
 }));
 
-function Post() {
+function Post({ imgLink }) {
   const classes = useStyle();
 
   return (
@@ -49,11 +49,7 @@ function Post() {
           title="A Cup of Espresso"
           subheader={format(new Date(), "do MMMM Y")}
         />
-        <CardMedia
-          className={classes.media}
-          image="https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c?w=164&h=164&fit=crop&auto=format&dpr=2"
-          title="Espresso"
-        />
+        <CardMedia className={classes.media} image={imgLink} title="Espresso" />
         <CardContent>
           <Typography variant="body2" color="textSecondary" component="p">
             Espresso is generally thicker than coffee brewed by other methods,
